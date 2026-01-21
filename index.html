@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .photo-container {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .photo-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+        }
+
+        .photo-label {
+            text-align: center;
+            margin-top: 10px;
+            color: #555;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Photo Gallery</h1>
+    
+    <div class="gallery">
+        <div class="photo-container">
+            <img src="photos/customer1.png" alt="Customer 1">
+            <div class="photo-label">Customer 1</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer2.png" alt="Customer 2">
+            <div class="photo-label">Customer 2</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer3.png" alt="Customer 3">
+            <div class="photo-label">Customer 3</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer4.png" alt="Customer 4">
+            <div class="photo-label">Customer 4</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer5.png" alt="Customer 5">
+            <div class="photo-label">Customer 5</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer6.png" alt="Customer 6">
+            <div class="photo-label">Customer 6</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer7.png" alt="Customer 7">
+            <div class="photo-label">Customer 7</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer8.png" alt="Customer 8">
+            <div class="photo-label">Customer 8</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer9.png" alt="Customer 9">
+            <div class="photo-label">Customer 9</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer10.png" alt="Customer 10">
+            <div class="photo-label">Customer 10</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/customer11.png" alt="Customer 11">
+            <div class="photo-label">Customer 11</div>
+        </div>
+        
+        <div class="photo-container">
+            <img src="photos/background.png" alt="Background">
+            <div class="photo-label">Background</div>
+        </div>
+    </div>
+</body>
+</html>
+
